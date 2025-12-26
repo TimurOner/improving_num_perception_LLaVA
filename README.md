@@ -8,10 +8,9 @@
 
 ## 📊 Datasets
 
-![Results](Readme Figures/ccnl1_dataset_illustration.png)
-![Results](Readme Figures/ccnl2_obj_num_pairs.png)
-![Results](Readme Figures/clevr_dataset_illustration.png)
-
+![Results](Readme%20Figures/ccnl1_dataset_illustration.png)
+![Results](Readme%20Figures/ccnl2_obj_num_pairs.png)
+![Results](Readme%20Figures/clevr_dataset_illustration.png)
 
 ## 🧪 Experimental Setup
 
