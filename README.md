@@ -8,6 +8,8 @@
 
 ## 📊 Datasets
 
+![Results](figures/results.png)
+
 ## 🧪 Experimental Setup
 
 ## 📝 Prompt Selection Strategy
