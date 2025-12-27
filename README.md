@@ -12,14 +12,19 @@ The Multimodal Large Language Models (MMLLMs)
 
 
 ## 📉 Baseline Results (Untuned LLaVA)
+LLaVA has some baseline counting (ennumeration) capabilities but the counting accuracy remains comparatively low especially for images containing more than 5 objects.
+
 
 ## 🔧 Fine-Tuning Approaches
-- Multimodal Projector:
-- Vision Transformer (ViT):
-- Projector + ViT:
-  
-- Language Model Ablations
-- Learning Rate Ablations: 
+
+The finteuning scenarious were considered.
+
+- **Multimodal Projector:** First, the multimodal projector was fine-tuned with LoRA updates.
+- **Vision Transformer (ViT):** After observing limited improvements and limited robustness to distribution shift, the vision transformer was fine-tuned on CLEVR.
+- **Projector + ViT:** The entire pipeline with the tuned transformer was trained again, resulting in improved enumeration accuracy and robustness to distribution shifts.
+- **Language Model Ablations:** The effect of language model tuning was tested via ablations.
+- **Learning Rate Ablations:** The effect of different learning rates when tuning the LLaVA pipeline was studied.
+
 
 ## 🔄 Generalization & Transfer Experiments
 
