@@ -2,17 +2,39 @@
 
 ## 🔍 Key Engineering Problem
 
-The Multimodal Large Language Models (MMLLMs) 
-![Results](Readme%20Figures/llava_architecture.png)
+The Multimodal Large Language Models (MMLLMs) struggle with counting number of items in images (visual enumeration). In this repo, a systematic tuning approach is presented to tackle this problem. One of key aims is to achieve an improvement that is robust to different object catgories and different backgrounds. I show that more numerosity aware vision transformer representations result in not only better and more robust counting performance but also result in better performance in binary comparison task. To see the full results and the methods, please check the the excrepts from my thesis in this repo. 
+
+<p align="center">
+  <img src="Readme Figures/llava_architecture.png" width="600">
+</p>
+
+
 ## 📊 Datasets
 
-![Results](Readme%20Figures/ccnl1_dataset_illustration.png)
-![Results](Readme%20Figures/ccnl2_obj_num_pairs.png)
-![Results](Readme%20Figures/clevr_dataset_illustration.png)
-
+3 datasets are used in this work. Some of the samples from these datasets are shown below.
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="Readme Figures/ccnl1_dataset_illustration.png" width="100%"><br>
+      <sub><b>(a)</b> CCNL-1 dataset illustration</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="Readme Figures/ccnl2_obj_num_pairs.png" width="100%"><br>
+      <sub><b>(b)</b> Object–number pair distribution (CCNL-2)</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="Readme Figures/clevr_dataset_illustration.png" width="100%"><br>
+      <sub><b>(c)</b> CLEVR dataset illustration</sub>
+    </td>
+  </tr>
+</table>
 
 ## 📉 Baseline Results (Untuned LLaVA)
 LLaVA has some baseline counting (ennumeration) capabilities but the counting accuracy remains comparatively low especially for images containing more than 5 objects.
+
+<img src="Readme Figures/cm_all_CCNL1.png" width="500">
+
+
 
 
 ## 🔧 Fine-Tuning Approaches
@@ -34,20 +56,13 @@ In this work, I have conducted experiments to see how the performance improvemen
 - Even → Odd numerosity transfer
 - Cross Dataset Transfer (CCNL2 to CCNL1)
   
-## 🧩 Representation Analysis
-- Few-shot linear probing
-- PCA embedding analysis
-
-## 📐 Hyperparameter Analysis
-
-## 🔁 Transfer to Downstream Numerical Tasks
 
 ## 📌 Key Improvements and Discussion
 
 ## ⚠️ Limitations and Future Work
 
 
-## 📄 Thesis Reference
-
 
 ## 🙏 Acknowledgements
+
+Many thanks to the members of CCNL at University of Padova for their supervision and guidance during this work.
