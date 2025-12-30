@@ -68,8 +68,18 @@ In this work, I have conducted experiments to see how the performance improvemen
 ## 📉 Improvements Demo
 
 LLaVA has some baseline counting (ennumeration) capabilities but the counting accuracy remains comparatively low especially for images containing more than 5 objects.
-
-<img src="Readme Figures/cm_all_CCNL1.png" width="500">
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="Readme Figures/cm_all_CCNL1.png" width="100%"><br>
+      <sub><b>(a)</b> Counting accuracy on CCNL-2 (Baseline LLaVA)</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="Readme Figures/cm_all.png" width="100%"><br>
+      <sub><b>(b)</b>Counting accuracy on CCNL-2 (Tuned LLaVA)</sub>
+    </td>
+  </tr>
+</table>
 
 
 
