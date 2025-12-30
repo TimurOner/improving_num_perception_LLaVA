@@ -71,7 +71,7 @@ LLaVA has some baseline counting (ennumeration) capabilities but the counting ac
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="Readme Figures/cm_all_CCNL1.png" width="100%"><br>
+      <img src="Readme Figures/download.png" width="100%"><br>
       <sub><b>(a)</b> Counting accuracy on CCNL-2 (Baseline LLaVA)</sub>
     </td>
     <td align="center" width="50%">
