@@ -29,10 +29,18 @@ The Multimodal Large Language Models (MMLLMs) struggle with counting number of i
   </tr>
 </table>
 
-## 📉 Baseline Results (Untuned LLaVA)
-LLaVA has some baseline counting (ennumeration) capabilities but the counting accuracy remains comparatively low especially for images containing more than 5 objects.
+## 📌 Baseline Results (Untuned LLaVA)
 
-<img src="Readme Figures/cm_all_CCNL1.png" width="500">
+This repo is organized as follows:
+
+📂 ViT Zoo: The tuned adapters for tuned vision transformers.
+
+📂 trained_adapters_for_llava: The trained PEFT adapters for the entire LLaVA pipeline.
+
+📂 Modules: The helper functions and the class definitions for the training and inference code.
+
+In addition to these folders, there is training code for the LLaVA pipeline, the training code for the ViT, and Jupyter notebooks where the performance of LLaVA is demonstrated for different datasets and different training settings.
+
 
 
 
@@ -57,9 +65,11 @@ In this work, I have conducted experiments to see how the performance improvemen
 - Cross Dataset Transfer (CCNL2 to CCNL1)
   
 
-## 📌 Key Improvements and Discussion
+## 📉 Improvements Demo
 
-## ⚠️ Limitations and Future Work
+LLaVA has some baseline counting (ennumeration) capabilities but the counting accuracy remains comparatively low especially for images containing more than 5 objects.
+
+<img src="Readme Figures/cm_all_CCNL1.png" width="500">
 
 
 
