@@ -1,0 +1,42 @@
+{
+  "dataset": {
+    "train_name": "CLEVR",
+    "val_name": "CLEVR",
+    "test_name": "CCNL2",
+    "train_objs": null,
+    "val_objs": null,
+    "test_objs": null,
+    "num_augment_train": true,
+    "augment_factor": 3
+  },
+
+  "training": {
+    "learning_rate": 5e-5,
+    "weight_decay": 1e-4,
+    "total_epochs": 16,
+    "batch_size_train": 8,
+    "batch_size_val": 32,
+    "batch_size_test": 32,
+    "mixed_precision": true,
+    "on_cats": false,
+    "warmup_steps": 400,
+    "patience": 3
+  },
+
+  "peft": {
+    "r": 10,
+    "lora_alpha": 10,
+    "target_modules": ["MLP", "att_v", "att_q"],
+    "target_levels": [19, 20, 21, 22, 23]
+  },
+
+  "classifier": {
+    "num_classes": 10,
+    "freeze_vit": false
+  },
+
+  "paths": {
+    "results_save": "/content/drive/MyDrive/Modality Gap and Numerosity Thesis/Experiments/Exp6/vit_zoo/clevr_finetuned_2",
+    "adapter_save": "/content/drive/MyDrive/Modality Gap and Numerosity Thesis/Experiments/Exp6/vit_zoo/clevr_finetuned_2"
+  }
+}
