@@ -29,7 +29,7 @@ The Multimodal Large Language Models (MMLLMs) struggle with counting number of i
   </tr>
 </table>
 
-## 📌 Baseline Results (Untuned LLaVA)
+## 📌 Organization of this Repo
 
 This repo is organized as follows:
 
@@ -47,7 +47,7 @@ In addition to these folders, there is training code for the LLaVA pipeline, the
 
 ## 🔧 Fine-Tuning Approaches
 
-The finteuning scenarious were considered.
+The finetuning scenarios were considered.
 
 - **Multimodal Projector:** First, the multimodal projector was fine-tuned with LoRA updates.
 - **Vision Transformer (ViT):** After observing limited improvements and limited robustness to distribution shift, the vision transformer was fine-tuned on CLEVR.
